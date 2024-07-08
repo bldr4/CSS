@@ -1,0 +1,46 @@
+/* * -> sélecteur universel */
+*, *::before, *::after {
+    background-color: #000;
+}
+
+/* sélecteur de balise */
+h1{
+    color: red;
+}
+/* Sélecteur classe */
+.title{
+    color: blue;
+}
+
+/* Sélecteur id */
+/* #title-1{
+    color: green;
+} */
+
+/* Sélectionne tous les élements qui ont la classe title ET la classe first-title */
+.title.first-title{
+    color:yellow;
+}
+/* Tous les élements qui ont la classe title OU first-title OU les deux */
+.title, .first-title{
+    color: green;
+}
+
+/* Sélectionner tous les élements p dans mon élement .container */
+/*  On évite d'utiliser plus de 3 sélecteurs */
+.container p{
+    color:lightcoral;
+    font-size: 30px;
+}
+
+/*  !!!! A éviter !!!! */
+html body .container ul li {
+    color: lightseagreen;
+    font-size:30px;
+}
+
+/* Dans ce cas -> utiliser une classe */
+.list-item{
+    color: lightcyan!important;
+    font-size:30px;
+}

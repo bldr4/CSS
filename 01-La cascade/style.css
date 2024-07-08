@@ -1,0 +1,12 @@
+body{
+    background: #000;
+    text-align: center;
+}
+h1{
+    color: red;
+}
+
+/* Sélecteur avec le même niveau de spécifitié -> le dernier l'emporte  */
+h1{
+    color: blue;
+}

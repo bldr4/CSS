@@ -1,0 +1,26 @@
+body{
+    background: #000;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+/* Premier niveau de spécificité  -> le tag  */
+/* spécificité (id > class > tag) */
+h1{
+    color: aquamarine !important;
+}
+
+/* Deuxième niveau de spécificité  -> la class  */
+.title-1{
+    color:crimson;
+}
+
+/* Troisième niveau de spécificité  -> l'id  */
+#title{
+    color:green;
+}
+
+/* Cumuler les forces de spécificité */
+body .title-1#title{
+    color:yellow;
+}

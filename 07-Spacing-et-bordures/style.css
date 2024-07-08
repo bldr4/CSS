@@ -1,0 +1,54 @@
+/* reset pour éviter les marges par defaut des navigateurs */
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    /* Prendre en compte les marge et border pour correspondre aux dimensions de mes élements de bases  */
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 35px;
+
+    /* margin = marge externe */
+    /* sur tous les cotés */
+    margin: 20px;
+    /* haut/bas, gauche/droite */
+    margin:20px 10px;
+    /* haut, droite/gauche, bas  */
+    margin: 20px 10px 30px;
+    /* haut, droite, bas, gauche */
+    margin: 10px 20px 30px 40px;
+
+    /* autre manière */
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+
+    /* padding = marge interne */
+    background-color: blueviolet;
+    padding: 50px;
+
+
+    /* border = bordure */
+    /* border-width:5px;
+    border-style:solid;
+    border-color:red; */
+
+    /* ces 3 propriétés sont résumé par la suivante */
+    border: 15px solid red;
+    /* Si la valeur du radius est sup à la moitier de la hauteur de l'élement alors on obtient un effet pills */
+    border-radius: 9999px;
+}
+.box{
+    background-color: blue;
+    width:200px;
+    height:200px;
+    margin: 10px 20px 30px 40px;
+    padding: 10px 20px 30px 40px;
+    border: 30px solid red;
+
+    
+    /* Centrer un élement directement anfant de body sur Y */
+    margin: 0 auto;
+}

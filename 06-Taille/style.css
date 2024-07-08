@@ -1,0 +1,41 @@
+/* un pixel est un petit carré de votre écran, ses dimensions sont propres à la qualité et la densité de chaque écran */
+
+/* Unités de mesure */
+/* px = unité de mesure absolue */
+/* % = unité de mesure relative --> au parent */
+/* vh , vw = unités relatives ( de 0 - 100) represente le pourcentage de la largeur ou hauteur du navigateur */
+/* inch = unité relative à la taille d'écran */
+
+body{
+    background-color: #333;
+    /* Vh -> viewport height ici 100% de la hauteur du navigateur visible */
+    height:100vh
+}
+
+/* .box1{
+    background-color: aquamarine;
+    width: 500px;
+    height: 50%;
+} */
+
+.box2{
+    background-color: red;
+    height:400px;
+    /* min-width : définir une largeur mini */
+    /* max-width : définir une largeur max */
+    min-width:200px;
+}
+
+p{
+    color: #f1f1f1;
+    font-size:30px;
+    background-color: royalblue;
+    /* min-content: Prendre la largeur du PLUS GRAND contenu ( ici le mot le plus grand) */
+    /* width:min-content */
+
+    /* max-content: Prend la largeur totale du contenu */
+    /* width:max-content */
+
+    width:fit-content;
+
+}

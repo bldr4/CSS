@@ -1,0 +1,23 @@
+div{
+    /* p hérite de son parent hiérachiquement le plus proche  */
+    color:green;
+    font-size: 8px;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color:red;
+    font-size: 50px;
+}
+a{
+
+}
+/* inherit -> forcer l'héritage */
+button{
+    font-size: inherit;
+    font-family: inherit;
+}
+/* initial -> supprimer l'héritage */
+.card p {
+    color: initial;
+    font-size: initial;
+}

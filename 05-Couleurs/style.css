@@ -1,0 +1,21 @@
+.box{
+    width:500px;
+    height:500px;
+    /* background-color: lightgreen; */
+
+    /* Red Green Blue 0-255 */
+    /* background-color: rgb(122, 193, 122); */
+
+    /* RGBA -> A=opacity 0-1 */
+    background-color: rgba(122, 193, 122, 0.1);
+
+
+    /* hexadecimal */
+    /* base16 = [0-9][a-f] */
+    background-color: #fa8072;
+}
+
+h1{
+    color:#fff;
+    background-color: #000;
+}

@@ -1,0 +1,42 @@
+/* 
+Bloc:
+    - Il prend toute la largeur de la page et pousse les autres élements à la ligne 
+    - Si il na pas de hauteur définit il va prendre la hauteur de ses enfants.
+
+
+Inline:
+    - width et height ne fonctionne pas 
+    - Il prend la taille de son contenuet NE POUSSE PAS les autres élements à la ligne 
+
+Inline-block:
+    - Prend le meilleur des deux mondes
+    - On peut emettre width et height 
+    - On peut mettre les élements à la suite, ça ne pousse pas à la ligne 
+
+
+
+ */
+
+
+ /* Display permet de définir des bloc de comportements propre à chaque valeur: block, inline, inline-block, none */
+
+ .box1{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    display:none
+ }
+ .box2{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    display:inline-block
+ }
+ span{
+    background-color: blue;
+
+    color:aliceblue;
+    display:block;
+    width:200px;
+    height:200px;
+ }
