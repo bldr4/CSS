@@ -1,0 +1,23 @@
+.box{
+    width: 250px;
+    height:300px;
+
+   /* Ombre sur un élement */
+    /* les valeurs: x y blur spread color */
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.4);
+    margin: 100px auto;
+}
+
+h2{
+    text-align: center;
+
+    /* Ombre sur du texte */
+    /* les valeurs: x y blur color */
+    text-shadow: 10px 0 10px rgba(0, 0, 0, 0.4);
+    margin:30px 0 0 10px;
+
+}
+p{
+    text-align: center;
+    margin:10px;
+}

@@ -1,0 +1,69 @@
+body{
+    background-color: #333;
+    color:cornsilk;
+
+}
+h1{
+    /* center du texte */
+    text-align: center;
+
+    /* taille de la police de base 16px */
+    font-size: 40px;
+
+    /* ecartement des lettres */
+    letter-spacing:10px;
+
+    /* Changer la police  */
+    font-family:sans-serif;
+    
+}
+
+a{
+    color:cornsilk;
+
+    /* Enlever le style par defaut */
+    /* text-decoration: none; */
+
+    /* styliser le style par defaut  */
+    text-decoration-thickness: 10px;
+    text-underline-offset: 10px;
+
+    /* changer le curseur */
+    cursor:crosshair;
+}
+
+p{
+    /* graissage  */
+    font-weight:400;
+
+    /* italic */
+    font-style:italic;
+
+    /* changer min maj  */
+    text-transform:capitalize;
+
+    /* Faire un retour à la ligne standardisé */
+    text-align:justify;
+
+
+
+    
+}
+
+ul{
+    /* changer la puce en symbol */
+    list-style-type:upper-roman;
+
+    /* change la puce en image */
+    list-style-image:url('votreUrl');
+
+    /* position de la liste */
+    list-style-position:inside;
+
+
+}
+/* focus sur la puce */
+li::marker{
+    color:red;
+    font-size:30px;
+}

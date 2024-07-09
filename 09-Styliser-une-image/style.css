@@ -1,0 +1,43 @@
+img{
+    width:650px;
+    height:300px;
+    /* permet de remplir le bloc img sans déformer l'image */
+    object-fit:contain
+}
+
+.img-bg{
+    height:100vh;
+    background-color: blanchedalmond;
+
+    /* Mettre une image en fond  */
+    background-image: url('./images/nature.jpg');
+
+    /* Eviter de dupliquer l'image de fond  */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Faire un focus sur une partie de l'image  */
+    background-position: center;
+
+    /* résumé de ces props */
+    /* image position/size repeat */
+    background: url('./images/nature.jpg') center/cover no-repeat;
+}
+
+.fixed{
+    background-image: url('./images/nature.jpg');
+    height:500px;
+    /* Garde l'image au même endroit quand on scroll  */
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.scroll{
+    background-image: url('./images/nature.jpg');
+    height:100vh;
+       /* l'image suit le scroll -> valeur par defaut   */
+    background-attachment: scroll;
+    background-size: cover;
+
+}

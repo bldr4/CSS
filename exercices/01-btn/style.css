@@ -1,0 +1,19 @@
+body{
+    /* 1er méthode pour centrer le btn sur x */
+    text-align: center;
+    margin-top:250px;
+}
+
+.btn{
+    background-color: #4676d7;
+    color:#fff;
+    padding:10px 20px;
+    text-transform: uppercase;
+    width:140px;
+    border:none;
+    border-radius: 5px;
+    /* 2eme méthode pour centrer le btn sur x */
+    /* On doit passer en block car de base le btn est un élement inline-block */
+    display:block;
+    margin: 250px auto;
+}

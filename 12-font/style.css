@@ -1,0 +1,11 @@
+body{
+    /* sans-serif = pas d'empattement -> Arial,Roboto */
+    /* serif = avec empattement -> Times New Roman */
+
+    /* changer la font  */
+    font-family: 'Times New Roman', Times, serif;
+
+    /* faire charger une font depuis google font avec CDN */
+    font-family: 'Roboto';
+
+}

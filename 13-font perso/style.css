@@ -1,0 +1,15 @@
+/*  Les extensions de font woff, otf, ttf */
+
+
+/* Font face imorter une font depuis un fichier */
+/* Spécifier plusieurs font pour la compatibilité entre nav  */
+@font-face{
+    font-family: 'Stay Classy';
+    src: url('./fonts/Stay\ Classy\ SLDT.otf'),
+         url('./fonts/Stay\ Classy\ SLDT.ttf');
+}
+
+body{
+    /* utiliser la font téléchargé */
+    font-family: 'Stay Classy';
+}
