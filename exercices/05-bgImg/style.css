@@ -1,0 +1,30 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+}
+
+.container{
+    background-image: url('src/night.jpg');
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-position:90% 90%;
+}
+
+h1{
+    text-align: center;
+    color: #f1f1f1;
+    padding-top: 250px;
+    font-size: 80px;
+    letter-spacing: 5px;
+}
+h2{
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 50px;
+    letter-spacing: 5px;
+}

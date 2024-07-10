@@ -1,0 +1,28 @@
+*, ::after, ::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.card{
+    background-color: #032508;
+    width:400px;
+    height:450px;
+    color: #f1f1f1;
+    margin:200px auto;
+    border-radius:10px;
+}
+
+.myImg{
+    width:100%;
+    height: auto;
+    border-radius:10px 10px 0 0;
+}
+
+h2{
+    margin: 25px 0 10px 5px;
+}
+
+p{
+    margin:5px;
+}
