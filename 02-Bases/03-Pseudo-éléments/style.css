@@ -1,0 +1,40 @@
+/* pseudo élements: Ils permettent de créer des élements à l'intérieur d'autre élements ou de sélectionner une partie d'un élement  */
+
+body{
+    background-color: #333;
+    color:aliceblue;
+}
+
+h1{
+    font-size:80px;
+}
+
+/* Certaine balises ne peuvent oas avoir de pseudo élement comme img   */
+/* Toujours utiliser la prop content pour que le pseudo élement s'affiche même si on le laisse vide */
+h1::before{
+    content:"";
+    background-color: red;
+    height: 50px;
+    display: block;
+}
+
+h1::after{
+    content:"";
+    background-color: red;
+    height: 50px;
+    display: block;
+}
+/* Sélectionner une partie d'un élement  */
+
+p::first-line{
+    color: red;
+}
+
+p::first-letter{
+    font-size: 50px;
+}
+
+p::selection{
+    background-color: blue;
+    color: yellow;
+}

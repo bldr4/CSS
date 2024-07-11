@@ -1,0 +1,68 @@
+/* sélectionne les élement qui ont à la fois la classe title ET l'id main-title */
+.title#main-title{
+    color:red;
+}
+
+/*  sélectionner les élements qui ont la classe title ET les élements qui ot l'id main-title */
+.title, #main-title{
+    color:green;
+}
+
+/* sélectionner tous les p enfant de div  */
+div p {
+    color:yellow;
+}
+
+
+/* Sélecteurs avancés */
+/* Sélectionner tous les enfants de premier niveau  */
+.list > li {
+    background-color: red;
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    margin:30px;
+}
+
+/* Sélectionner le premier élement de même niveau  */
+.box + div{
+    background-color: green;
+}
+
+/* Sélectionner tous les élements de même niveau  */
+.box ~ div{
+    background-color: blue;
+}
+
+/* Sélecteurs d'attributs */
+/* attribut avec valeur complète */
+input[type='text']{
+    background-color: aqua;
+}
+
+/* attribut aleur partielle */
+a[href$='.fr']{
+    background-color: red;
+}
+
+/* Les pseudo classes de position  */
+/* nth-chil = sélectionner un élement dans une liste de balise  */
+/* odd = impaire // even :pair */
+li:nth-child(even){
+    background-color: red;
+}
+
+li:nth-child(3){
+    background-color: blue;
+}
+
+li:first-of-type{
+    background-color: aquamarine;
+}
+
+ol:not(.not){
+    background-color: royalblue;
+}

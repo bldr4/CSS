@@ -1,0 +1,72 @@
+body{
+    background-color: #333;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+}
+/* De base la position des élements est à static : c'est à dire les élements vont se positionner avec le flow(flux) classic des élements : les élements block, inline etc  */
+/*  les élements static sont dit NON positionné */
+/*  Un élement positonné à accès à de nouvelles props : top, right, bottom, left +  inset qui résume ces props  */
+
+.b1{
+    background-color: red;
+    /* Reste dans le flux normal -> occupe tjrs son espace de base dans le DOM  */
+    position:relative;
+    /* Il est poussé de 250px vers la gauche par rapport à sa position initiale dans le flux du doc  */
+    /*  Comme il est positionné il passe au dessus des élements static ( changement du contexte d'empilement */
+    left:250px;
+    top:250px;
+
+/* top, right, bottom, left */
+    inset:250px 0 0 250px
+
+}
+.b2{
+    background-color: skyblue;
+    /* Il sort du flux normal */
+    /* Quand on positionne un élement en absolute, il le positionne par rapport à son parent direct, si le parent est lui même positionné sinon par rapport au nav  */
+    position:absolute;
+    top:50px;
+}
+.b3{
+    background-color: blue;
+    /* Il sort du flux mais tjrs relatif au nav */
+    position:fixed;
+    top:0;
+    width:100%;
+    height: 50px;
+}
+.b4{
+    background-color: green;
+    /* Un mélange entre relative et fixed  */
+    /* Se comporte comme relative jusqu'à ce qu'il atteigne un certain point de défilement */
+    position:sticky;
+    /* Quand l'élement arrive à 100px dop il est fixé au scroll  */
+    top:100px;
+}
+.b5{
+    background-color: yellow;
+}
+
+
+/* centrer un élement  */
+.parent{
+    background-color: crimson;
+    position: relative;
+
+}
+
+.enfant{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    /* l'élement parent est positionné donc, il va se posiotnner par rapport à son parent, si le parent n'est pas positionné, il se positionne pa rapport au nav */
+    position:absolute;
+    top:50%;
+    left:50%;
+    /* On dévale de la moitier de sa largeur sur x et moitier de sa hauteur su y  */
+    transform:translate(-50%, -50%) ;
+    
+}
