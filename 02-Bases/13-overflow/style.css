@@ -1,0 +1,14 @@
+.card{
+    background-color: red;
+    width:400px;
+    height: 200px;
+    /* de base  */
+    /* overflow:visible; */
+
+    /* cacher le ontenu qui dépasse */
+    /* overflow: hidden; */
+
+    /* Ajouter un scroll */
+    overflow:scroll;
+    overflow:auto;
+}

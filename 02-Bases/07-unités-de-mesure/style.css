@@ -1,0 +1,65 @@
+body{
+    background-color: #333;
+    color:aliceblue
+}
+
+.box{
+    height: 150px;
+    margin-bottom: 20px;
+    background-color: crimson;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* unités abolues */
+.pixel{
+    width: 400px;
+}
+
+.inch{
+    width:4in;
+}
+
+/* unités relatives */
+.percentage{
+    width: 70%;
+}
+.vw{
+    width: 50vw;
+}
+.vh{
+    width: 50vh;
+}
+.vmin{
+    /* 20% du coté le plus petit (hauteur ou largeur) */
+    width:20vmin;
+}
+
+.vmax{
+     /* 20% du coté le plus grand (hauteur ou largeur) */
+    width:20vmax;   
+}
+
+
+/* texte */
+/* valeur de base de font-size = 16px */
+.pixel-txt{
+    font-size:26px;
+}
+
+/* em fait référence à la taille de la police de son parent */
+.parent{
+    font-size:25px;
+}
+
+.em-txt{
+    font-size: 2em;
+}
+
+/* rem fait référence à la taille de la police du nav */
+/*  */
+.rem-txt{
+    font-size: 2rem;
+}

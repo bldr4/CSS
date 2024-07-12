@@ -1,0 +1,16 @@
+body{
+    /* background-color: #333; */
+    /* color:aliceblue */
+}
+
+.box-border{
+  border:2px solid blue;
+  padding: 20px
+}
+
+/* outline comme border mais ne prend pas de place dans le DOM  */
+/* offset: permet d'éloigner l'outline */
+.box-outline{
+    outline:2px solid blue;
+    outline-offset:20px;
+}

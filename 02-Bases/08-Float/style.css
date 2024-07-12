@@ -1,0 +1,31 @@
+body{
+    background-color: #333;
+    color: aliceblue;
+}
+.container{
+    width:800px;
+    background-color: blueviolet;
+    margin:0 auto;
+}
+.box{
+    height: 200px;
+    width: 200px;
+}
+
+/* float sort l'élement du flux normal, mais il garde une interaction avec le texte  */
+.b1{
+    background-color: crimson;
+    float: left;
+}
+
+.b2{
+    background-color: turquoise;
+    float: right;
+}
+
+.container::after{
+    content:"";
+    display:block;
+    /* Oblige le container à se fixer après les élements flottants */
+    clear:both;
+}

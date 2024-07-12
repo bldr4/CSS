@@ -1,0 +1,28 @@
+/* Permet de définir un design system  */
+
+/* la pseudo classe root permet de sélectionner l'élement html par convention on déclare les variables avec ce sélecteur */
+:root{
+
+    /* colors */
+    --body-bg: #333;
+    --crimson:crimson;
+    --font:#fff;
+
+    /* fonts */
+    --base-font:sans-serif;
+
+    /* font-size */
+    --fs-12:0.75rem;
+    --fs-14:0.875rem;
+    --fs-16:1rem;
+    --fs-18:1.125rem;
+
+    /* shadows */
+    --light-shadow: 0 2px 0px #111;
+}
+
+body{
+    /* Utilisation des variables avec la fonction var() */
+    background-color: var(--body-bg);
+    color:var(--font);
+}

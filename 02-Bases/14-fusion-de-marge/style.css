@@ -1,0 +1,27 @@
+
+/* Problématique : Dans un flux normal, si je met un margin-top sur l'enfant, c'est le parent qui va être décalé du top  */
+
+/* 3 solutions: */
+/* - mettre un padding-top au parent -> pas bon car change la hauteur du parent !!
+-Mettre du contenu dans le parent
+-la prop display:flow-root sur le parent pour créer un nvx contexte de formatage qui empeche la fusion des marges  */
+
+.parent{
+    max-width: 400px;
+    height: 300px;
+    background-color: orangered;
+    margin: 0 auto;
+    display: flow-root;
+
+}
+.child{
+    background-color: lightblue;
+    height: 100px;
+    width: 100%;
+    margin-top:70px
+}
+/* .parent::before{
+    content:"";
+    display: block;
+  height:1px
+} */

@@ -1,0 +1,18 @@
+/* - reste dans le flux
+   - Les readers ont tjrs accès à l'élement   */
+
+.opacity{
+ opacity:0
+}
+
+/* Rend l'élément invisible mais reste dans le flux  */
+/* Ne peut pas être manipulé par l'utilisateur - cache aux readers */
+.visibility{
+visibility: hidden;
+}
+/* L'élement disparait complemtement  */
+
+.display{
+display:none
+}
+
