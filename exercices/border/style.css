@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    /* background-color: #333; */
+}
+
+.box{
+    display: inline-block;
+    color: aliceblue;
+    width: 200px;
+    height: 200px;
+    padding: 100px;
+    margin-right: -40px;
+
+}
+
+.b1{
+    background-color: #ffc30d;
+    border-radius: 56% 44% 98% 2% / 38% 12% 88% 62% ;
+}
+.b2{
+    background-color: #ff562cce;
+    border-radius: 37% 63% 63% 37% / 10% 81% 19% 90% ;
+}
+.b3{
+    background-color: #8d374dce;
+    border-radius: 84% 16% 100% 0% / 11% 1% 99% 89% ;
+}

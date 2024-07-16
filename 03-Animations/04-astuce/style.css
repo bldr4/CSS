@@ -1,0 +1,67 @@
+body{
+    background-color: #333;
+}
+.container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+/* 
+.toggle{
+    display:block;
+    width: 400px;
+    height: 400px;
+    background-color: crimson;
+
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"]:checked + .toggle{
+    background-color: blue;
+} */
+
+/* Exemple d'utilisation */
+
+.toggle{
+    display:block;
+    width: 40px;
+    height: 4px;
+    background-color: crimson;
+    position: relative;
+
+}
+.toggle::before, .toggle::after{
+    content:'';
+    display:block;
+    width: 40px;
+    height: 4px;
+    background-color: crimson;
+    position: absolute;
+    transition: transform 0.5s;
+
+}
+.toggle::before{
+    top:-10px;
+}
+.toggle::after{
+    top: 10px;
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"]:checked + .toggle{
+    background-color: transparent;
+}
+input[type="checkbox"]:checked + .toggle::before{
+    top:0;
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked + .toggle::after{
+    top:0;
+    transform: rotate(-45deg);
+}

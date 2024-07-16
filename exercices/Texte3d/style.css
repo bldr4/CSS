@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+  
+    font-family: sans-serif;
+}
+
+.txt{
+    font-size: 250px;
+    font-weight: 800;
+    color: rgb(247, 255, 255);
+    text-shadow: 
+    1px 1px #919191,
+    1px 2px #919191,
+    1px 3px #919191,
+    1px 4px #919191,
+    1px 5px #919191,
+    1px 6px #919191,
+    1px 7px #919191,
+    1px 8px #919191, 
+    1px 10px 5px #121212,
+    1px 20px 10px #121212,
+    1px 25px 35px #121212,
+    1px 30px 65px #121212;
+}

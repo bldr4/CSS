@@ -1,0 +1,27 @@
+body{
+    background-color: #333;
+    font-family: sans-serif;
+    text-align: center;
+}
+h1{
+    color: aliceblue;
+}
+
+.btn{
+    display: block;
+    margin:0 auto;
+    font-size: 18px;
+    color:#333;
+    padding:25px 90px;background-color: rgb(248, 185, 89);
+    outline:none;
+    border:none;
+    cursor:pointer;
+    box-shadow: 0 5px rgb(201, 133, 29);
+    position: relative;
+
+}
+
+.btn:active{
+    box-shadow: 0 0 rgb(201, 133, 29);
+    top:5px
+}
