@@ -1,0 +1,37 @@
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    background-color: royalblue;
+    border:1px solid black;
+    color:white;
+    font-size: 30px;
+    font-weight:800;
+    text-align: center;
+    line-height: 200px;
+}
+
+.grid{
+    /* position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); */
+
+    background-color: crimson;
+    display:grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-gap:5px;
+
+
+    /* Traiter les élements implicites  */
+    /* définir une hauteur pour les elements implicites */
+    grid-auto-rows: 200px;
+
+    /* Changement la disposition en column valeur de base : row */
+    grid-auto-flow:row;
+    grid-auto-columns: 200px;
+}

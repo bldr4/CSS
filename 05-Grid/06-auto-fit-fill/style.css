@@ -1,0 +1,37 @@
+.item{
+    background-color: royalblue;
+    border:1px solid black;
+    color:white;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.grid{
+
+
+    background-color: crimson;
+    display:grid;
+    grid-gap:5px;
+
+    grid-template-columns: repeat(auto-fit, 100px);
+    /* grid-template-columns: repeat(auto-fill, 100px); */
+
+    justify-content: center;
+
+
+    /* Auto-fill:
+     - Remplit l'espace avec autant de pistes que possible
+     - Peut laisser des pistes vides si les éléments ne les remplissent pas toutes. 
+
+
+     Auto-fit:
+     - Remplit l'espace avec autant de pistes que possible
+     - Effondre (supprime) les pistes vides pour utiliser l'espace plus afficacement.  */
+
+
+     /* Utiliser plus auto-fit  */
+}

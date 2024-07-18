@@ -1,0 +1,119 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+/****************************** btn 1 ***************************/
+/* .subscribe{
+padding:30px 45px;
+font-size: 50px;
+position: relative;
+z-index:1;
+overflow: hidden;
+color: #f1f1f1;
+transition: color 0.5s ease-out;
+
+} */
+
+/* .subscribe::before{
+    content:'';
+    background-color: black;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    transition:transform 0.5s ease-out;
+}
+
+.subscribe:hover::before{
+    transform: translateY(-100%);
+}
+.subscribe:hover{
+    color: black;
+} */
+
+/* Deuxième méthode */
+.subscribe{
+    padding:30px 45px;
+    font-size: 50px;
+    position: relative;
+    z-index:1;
+    overflow: hidden;
+    color: #f1f1f1;
+    background-color: black;
+    transition: color 0.5s ease-out;
+    
+    }
+.subscribe::before{
+    content:'';
+    background-color: white;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+
+    /* Permet de créer un masque de découpage sur un élement */
+    /* clip-path:inset(50% 0% 50% 0%) ; */
+
+    clip-path:circle(0% at 50% 50%);
+
+    transition:clip-path 0.5s ease-out;
+    clip-path:polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+
+}
+.subscribe:hover::before{
+    /* clip-path:inset(0% 0% 0% 0%) ; */
+    /* clip-path:circle(100% at 50% 50%); */
+    clip-path:polygon(50% -100%, 200% 50%, 50% 200%, -100% 50%);
+}
+.subscribe:hover{
+    color: black;
+} 
+
+/****************************** btn 2 FOCUS ***************************/
+.focus{
+    padding:30px 50px;
+    font-size: 50px;
+    border-radius: 3px;
+    position:relative;
+    border:none;
+    outline:none;
+    color:white;
+    background-color: transparent;
+
+}
+
+.focus::before, .focus::after{
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition:transform 0.5s ease-out;
+
+
+}
+.focus::before{
+    border:2px solid black;
+    margin:-2px;
+}
+.focus::after{
+    background-color: black;
+    z-index:-1;
+}
+
+.focus:hover::before{
+    transform:scaleX(1.05) scaleY(1.1);
+}
+.focus:hover::after{
+    transform:scaleX(0.95) scaleY(0.9);
+}

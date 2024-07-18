@@ -1,0 +1,33 @@
+
+
+.grid{
+    background-color: red;
+    height: 600px;
+    /* Déclarer la grid */
+    display:grid;
+
+    /* Déclarer des colonnes  */
+    grid-template-columns: 100px 200px 100px;
+
+       /* Déclarer des lignes  */
+    grid-template-rows: 200px 200px;
+
+    /* Autre manière de délcarer lignes et colonnes */
+    /* rows / columns */
+    /* le fr -> fractional unite, prend toute la place restante  */
+    grid-template: 1fr 1fr / 200px 200px 1fr;
+
+    /* repeat(nb, taille) */
+    grid-template: repeat(2, 1fr) / repeat(2,200px) 1fr;
+
+
+    /* gérer l'écartement entre les élements  */
+    /* X, Y */
+    grid-gap:10px 20px;
+}
+.item{
+    background-color: royalblue;
+    border:1px solid black;
+    color:white;
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+body{
+
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 10px;
+
+}
+
+.d1{
+    animation: loader 0.3s 0s infinite alternate;
+}
+.d2{
+    animation: loader 0.3s 0.05s infinite alternate;
+}
+.d3{
+    animation: loader 0.3s 0.1s infinite alternate;
+}
+
+@keyframes loader{
+    100%{
+        transform: translateY(-30px);
+    }
+}
+

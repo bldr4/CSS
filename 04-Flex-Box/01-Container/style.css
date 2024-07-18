@@ -1,0 +1,45 @@
+body{
+    background-color: #333;
+}
+
+.container{
+    background-color: lightpink;
+    height:400px;
+    width: 600px;
+    margin:0 auto;
+
+
+/* définir l'envionnement flexible */
+    display:flex;
+    /* goutière */
+    gap:5px 50px;
+    /* row-gap: 30px; */
+    /* column-gap: 30px; */
+
+    /* aligner des élements */
+    /* sur x */
+    justify-content:center;
+
+    /* sur y */
+    align-items: center;
+
+    /* changer la disposition des items */
+    flex-direction: row;
+
+    /* gérer le retour à la ligne des élements */
+    flex-wrap: wrap;
+
+/* Gérer l'écart entre les rangées */
+    align-content: center;
+
+    /* flex-direction et flex-wrap */
+    flex-flow: column wrap
+}
+
+.flex-items{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    font-size: 35px;
+    text-align: center;
+}

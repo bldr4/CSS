@@ -1,0 +1,26 @@
+.item{
+    background-color: royalblue;
+    border:1px solid black;
+    color:white;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.grid{
+
+
+    background-color: crimson;
+    display:grid;
+    grid-gap:5px;
+    /* min-content : largeur du mot ou contenu le plus long  */
+    /* max-content: largeur de tous les élements  */
+    /* grid-template-columns: max-content 200px min-content; */
+
+    /* on déclare un colonne de 1fr puis une colonne de au mini 600px ou 1fr  */
+    grid-template-columns: 1fr minmax(600px, 1fr);
+
+}

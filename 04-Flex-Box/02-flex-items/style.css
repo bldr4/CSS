@@ -1,0 +1,57 @@
+body{
+    background-color: #333;
+}
+
+.container{
+    background-color: lightpink;
+    height:400px;
+    width: 600px;
+    margin:0 auto;
+/* définir l'envionnement flexible */
+    display:flex;
+
+    gap:5px 5px;
+
+
+ 
+}
+
+.flex-items{
+    /* width: 100px; */
+    /* height: 100px; */
+    background-color: crimson;
+    font-size: 35px;
+    text-align: center;
+
+    /* garde les items dans le container */
+    flex-shrink: 1;
+    /* Distribue l'espace dispo à tous les élements  */
+    flex-grow: 1;
+
+    /* flex-grow flex-shrink flex-basis */
+    flex: 1 1 auto;
+
+}
+
+.i1{
+    /* alignement sur y pour les items */
+    /* de base */
+    align-self:stretch;
+
+    /* comparable à un width pour les flex-items */
+    flex-basis: 300px;
+
+    /* changer l'order des élements  */
+    order:3;
+}
+
+.i2{
+    /* align-self:center; */
+    flex-grow: 2;
+    order:2;
+}
+
+.i3{
+    /* align-self:end; */
+    order:1;
+}
