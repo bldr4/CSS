@@ -117,3 +117,182 @@ transition: color 0.5s ease-out;
 .focus:hover::after{
     transform:scaleX(0.95) scaleY(0.9);
 }
+
+
+/****************************** btn 3 Contact ***************************/
+
+.underlined{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#000000;
+    position:relative;
+}
+
+.underlined::after{
+    content:"";
+    display:block;
+    width:100%;
+    height:2px;
+    position:absolute;
+    bottom:0;
+    background: #111;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-out;
+
+    /* changer l'origine d'apparition de la ligne */
+    /* transform-origin: right; */
+
+
+}
+
+.underlined:hover::after{
+    transform: scaleX(1);
+}   
+
+/****************************** btn 4 Border avec 2 pseudo éléments ***************************/
+
+.border{
+    position: relative;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    font-size: 50px;
+    color: #020202;
+}
+.border::before,
+.border::after{
+    content:'' ;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border:2px solid transparent;
+}
+.border:hover::before{
+    animation: survol 1s linear forwards;
+
+}
+@keyframes survol{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color:#000000 ;
+        border-right-color:#000000  ;
+    }
+    50%{
+        width: 100%;
+        height: 0;
+        border-top-color:#000000 ;
+        border-right-color:#000000  ;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color:#000000 ;
+        border-right-color:#000000 ;
+    }
+}
+
+
+
+.border:hover::after{
+    animation: survol2 1s linear forwards;
+}
+@keyframes survol2{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color:transparent ;
+        border-right-color:transparent ;
+        border-bottom-color:#000000  ;
+        border-left-color:#000000 ;
+    }
+    50%{
+        width: 0;
+        height: 100%;
+        border-top-color:transparent ;
+        border-right-color:transparent ;
+        border-bottom-color:#000000  ;
+        border-left-color:#000000 ;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color:transparent ;
+        border-right-color:transparent ;
+        border-bottom-color:#000000 ;
+        border-left-color:#000000 ;
+    }
+}
+
+
+
+
+/****************************** btn 4 Border avec 1 pseudo élément ***************************/
+
+
+.border {
+    position: relative;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    display: block;
+    font-size: 50px;
+    color: #020202;
+}
+
+.border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.border:hover::before {
+    animation: survol 1s linear forwards;
+}
+
+@keyframes survol {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: #000000;
+        border-right-color: #000000;
+        border-bottom-color: #000000;
+        border-left-color: #000000;
+    }
+    25% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #000000;
+        border-right-color: #000000;
+        border-bottom-color: #000000;
+        border-left-color: #000000;
+    }
+    50% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #000000;
+        border-right-color: #000000;
+        border-bottom-color: #000000;
+        border-left-color: #000000;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #000000;
+        border-right-color: #000000;
+        border-bottom-color: #000000;
+        border-left-color: #000000;
+    }
+}
+
