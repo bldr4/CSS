@@ -1,0 +1,17 @@
+h1{
+    /* On combine une unité relative avec une unité absolue  */
+    /* font-size: calc(25px + 2vw); */
+
+    /* clamp */
+    /*  valeur min , valeur préférée , valeur max  */
+    /* font-size: clamp(30px , 5vw , 50px); */
+
+
+    /* min  */
+    /*  recherche tjrs la valeur MINI si 5vw < 50px alors il applique 5vw  */
+    font-size: min(5vw , 50px);
+
+    /* max  */
+    /*  recherche tjrs la valeur MAX si 5vw < 50px alors il applique 5vw  */
+    font-size: max(5vw, 50px, 300px);
+}

@@ -1,0 +1,127 @@
+p{
+    font-size: 35px;
+}
+/* Instruction css @media */
+/* liste des media features */
+/* width : min-width, max-width */
+/* height: min-height, max-height */
+/* orientation */
+
+/************************************ Width *******************************/
+/* max-width = en dessous de n  */
+@media (max-width: 600px){
+    .txt-1{
+        background-color: red;
+    }
+}
+
+/* min-width = au dessus de n */
+@media (min-width: 600px){
+    .txt-1{
+        background-color: green;
+    }
+}
+
+/************************************ orientation *******************************/
+/* height > width */
+@media (orientation: portrait){
+    .txt-1{
+        background-color: red;
+    }
+}
+
+/* width > height */
+@media (orientation: landscape){
+    .txt-1{
+        background-color: green;
+    }
+}
+
+
+/************************************ Types de media *******************************/
+/* 
+all(par defaut) : tous les types de media
+print : pour les impressions
+screen : pour les écrans
+speech : pour les lecteurs d'écran
+*/
+
+@media print {
+    .txt-1{
+        background-color: green;
+    }
+}
+
+
+/************************************ Opérateurs *******************************/
+/* - and : ET 
+- , : OU
+- not : NON
+- only : permet d'ignorer les navigateurs qui ne supportent pas les media queries */
+
+@media screen and (min-width: 600px){
+    .txt-1{
+        background-color: red;
+    }
+}
+
+/* Créer un intervalles entre 500px et 800px */
+@media (min-width:500px) and (max-width: 800px){
+    .txt-1{
+        background-color: green;
+    }
+}
+
+/* le style est appliqué à l'infinie */
+@media (min-width:500px), (max-width: 800px){
+    .txt-1{
+        background-color: green;
+    }
+}
+
+
+/* au dessus de 600px comme un min-width */
+@media not (max-width: 600px){
+    .txt-1{
+        background-color: green;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .txt-1{
+        background-color: green;
+    }
+}
+
+/************************************ BONUS *******************************/
+
+/* prefers-color-scheme: charger un style en fonction du thème de l'OS de l'utilisateur  */
+
+@media (prefers-color-scheme: dark){
+    .txt-1{
+        background-color: red;
+    }
+}
+
+@media (prefers-color-scheme: light){
+    .txt-1{
+        background-color: green;
+    }
+}
+
+
+/* Cible les dispositifs en fonction des moyens de pointage */
+/* moyen de pointage précis souris, stylet */
+@media (pointer: fine){
+    .txt-1{
+        background-color: red;
+    }
+}
+
+/* moyen de pointage grossier écran tactile */
+@media (pointer: coarse){
+    .txt-1{
+        background-color: green;
+    }
+}

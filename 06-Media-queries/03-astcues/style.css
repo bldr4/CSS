@@ -1,0 +1,100 @@
+/* Break points intervales de style  */
+/* petits appareils (mobiles) : 320px- 599px */
+/* appareils moyens (tablettes) : 600px- 1023px */
+/* Grands appareils (desktop, laptop) : 1024px- 1439px */
+/*  Très Grands appareils (grands écrans de bureau) : 1440px- et + */
+
+/* !!!! responsive de 320px à 1440px !!! */
+
+
+
+
+
+/* Style par défaut -> dektop first  */
+h1{
+    font-size: 65px;
+    text-align: center;
+}
+.box{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px){
+    h1{
+        font-size: 90px;
+        text-align: center;
+    }
+}
+ 
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 60px;
+        text-align: left;
+    }
+    .box{
+        background-color: blue;
+        height: 300px;
+        width: 300px;
+        margin: 200px auto;
+        transform: rotate(45deg);
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 25px;
+       
+    }
+}
+ 
+
+
+/* Style par défaut -> mobile first  */
+
+h1{
+    font-size: 25px;
+    text-align: center;
+}
+.box{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+/* Breakpoints progressifs pour des écrans plus grands */
+@media screen and (min-width: 500px){
+    h1{
+        font-size: 25px;
+    }
+}
+ 
+
+@media screen and (min-width: 768px){
+    h1{
+        font-size: 60px;
+        text-align: left;
+    }
+    .box{
+        background-color: blue;
+        height: 300px;
+        width: 300px;
+        margin: 200px auto;
+        transform: rotate(45deg);
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    h1{
+        font-size: 90px;
+        text-align: center;
+       
+    }
+}
